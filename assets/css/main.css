@@ -1,0 +1,558 @@
+@font-face {
+    font-family: "Bebas Neue";
+    src: url(../fonts/BebasNeue-Regular.otf);
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+body {
+    background:rgb(255, 255, 255);
+    font-family: 'Roboto', sans-serif;
+    overflow-x: hidden;
+  }
+
+  ::-webkit-scrollbar{
+    width: 8px;
+    height: 8px;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    cursor: pointer;
+    background: #000000;
+  }
+
+  /* loader */
+
+  #loader{
+      position: fixed;
+      width: 100%;
+      height: 100vh;
+      background: #fff;
+      z-index: 99999;
+  }
+
+  nav{
+      background-color: rgba(234, 237, 240, 0.87);
+      color: black;
+      width: 100%;
+  }
+  nav img{
+      height: 30px;
+  }
+
+  nav .container-fluid{
+    margin: auto 80px;
+  }
+
+  .navbar{
+    z-index: 100;
+  }
+
+  .active{
+      border: #fff solid 2px;
+  }
+
+  .nav-link{
+      color: black;
+  }
+
+  .nav-link:hover{
+      background-color: black;
+    color: white;
+}
+
+@media only screen and (max-width: 500px){
+    lottie-player{
+        visibility: hidden;
+    }
+    .lottie-btn{
+        visibility: hidden;
+    }
+
+    nav .container-fluid{
+        margin: auto;
+      }
+}
+
+footer{
+    background-image: url("../img/bg.png");
+  width: 100%;
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+  padding-bottom: 30px;
+}
+
+footer .container{
+    padding: 100px;
+}
+
+footer img{
+    margin: 10px;
+}
+
+footer table{
+    width: 100%;
+}
+
+footer td{
+    color: #fff;
+    text-align: center;
+    font-family: monospace;
+}
+
+@media only screen and (max-width: 500px){
+    footer .container{
+        padding: 20px;
+    }
+
+    footer img{
+        height: 80px;
+        margin: 2px;
+    }
+
+    footer td{
+        font-size: 10px;
+    }
+}
+
+/* unvisited link */
+footer a:link {
+    color: rgb(255, 255, 255);
+  }
+  
+  /* visited link */
+  footer a:visited {
+    color: rgb(255, 255, 255);
+  }
+  
+  /* mouse over link */
+  footer a:hover {
+    color: rgb(231, 231, 231);
+  }
+  
+  /* selected link */
+  footer a:active {
+    color: rgb(255, 255, 255);
+  }
+  
+
+/* #Intro */
+
+.video-home{
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.video-home video{
+    position: absolute;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+}
+
+/* #intro{
+    height: 100vh;
+    width: 100%;
+    background:#000 url(../img/bg.png);
+}
+
+.intro-logo{
+    width: 60%;
+}
+
+@media only screen and (max-width: 500px){
+    #intro{
+        height: 70vh;
+        width: 100%;
+    }
+} */
+
+/* USP */
+
+#usp{
+    width: 100%;
+}
+#usp .col{
+    margin: 25px auto;
+    text-align: center;
+}
+
+#usp h1{
+    font-family: "Bebas Neue";
+    margin: 55px 0px;
+    text-align: center;
+    font-size: 25px;
+    font-weight: 900;
+    letter-spacing: 15px;
+}
+
+#usp img{
+    width: 300px;
+}
+
+#usp h4{
+    font-family: "Bebas Neue";
+    padding-top: 15px;
+}
+
+#usp p{
+    text-align: justify;
+}
+
+@media only screen and (max-width: 500px){
+    #usp h1{
+        letter-spacing: 4px;
+    }
+}
+
+/* ---- */
+
+#usp2{
+    width: 100%;
+    background: rgb(19, 19, 19);
+    color: rgb(255, 255, 255);
+}
+
+#usp2 .col{
+    margin: 25px auto;
+    text-align: center;
+}
+
+#usp2 h1{
+    font-family: "Bebas Neue";
+    padding: 55px 0px;
+    text-align: center;
+    font-size: 25px;
+    font-weight: 900;
+    letter-spacing: 15px;
+}
+
+#usp2 img{
+    width: 300px;
+}
+
+#usp2 h4{
+    font-family: "Bebas Neue";
+    padding-top: 15px;
+}
+
+#usp2 p{
+    text-align: justify;
+}
+
+#usp2 li{
+    font-size: small;
+    text-align: left;
+}
+
+@media only screen and (max-width: 500px){
+    #usp2 h1{
+        letter-spacing: 4px;
+    }
+}
+
+/* Gallery */
+
+#gallery{
+    width: 100%;
+    text-align: center;
+}
+
+#gallery .container{
+    padding-bottom: 100px;
+}
+
+#gallery h1{
+    font-family: "Bebas Neue";
+    margin-top: 60px;
+    margin-bottom: 60px;
+    text-align: center;
+    font-size: 25px;
+    font-weight: 900;
+    letter-spacing: 15px;
+}
+
+#gallery img{
+    margin: 10px;
+}
+
+@media only screen and (max-width: 500px){
+    #gallery img{
+        width: 29%;
+        margin: 4px 2px;
+    }
+
+    #gallery h1{
+        margin: 30px;
+        letter-spacing: 8px;
+    }
+}
+
+/* quote */
+
+.quote{
+    background-image: url("../img/bg.png");
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+    font-family: "Blacksword";
+    text-align: center;
+    color: rgb(255, 255, 255);
+    font-size: 100px;
+    padding: 40px;
+}
+
+@media only screen and (max-width: 500px){
+    .quote{
+        font-size: 30px;
+        padding: 40px 10px;
+    }
+}
+
+/* Featured */
+
+#featured{
+ width: 100%;
+}
+
+#featured h1{
+    font-family: "Bebas Neue";
+    margin-top: 60px;
+    margin-bottom: 60px;
+    text-align: center;
+    font-size: 25px;
+    font-weight: 900;
+    letter-spacing: 15px;
+}
+
+.featured-logos{
+    margin: auto 200px;
+}
+
+#featured img{
+    text-align: center;
+    height: 100px;
+    filter: grayscale(100%);
+    margin: 20px;
+}
+
+#featured img:hover{
+    filter: none;
+}
+
+@media only screen and (max-width: 500px){
+    #featured h1{
+        letter-spacing: 8px;
+    }
+
+    .featured-logos{
+        margin: auto;
+    }
+
+    #featured img{
+        text-align: center;
+        height: 50px;
+        margin: 8px;
+    }
+}
+
+/* Location */
+
+#parallax-bg{
+background-image: url("../img/bg.png");
+  height: 40vh;
+  width: 100%;
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 100px 50px 100px 50px;
+}
+
+#parallax-bg h1{
+    font-family: "Bebas Neue";
+    text-align: center;
+    color: aliceblue;
+}
+
+#locationIntro p{
+    text-align: center;
+    color: black;
+    padding: 50px 50px;
+}
+
+/* Location Table */
+#locationTable{
+    padding: 50px;
+}
+
+#locationTable table{
+    text-align: center;
+    width: 100%;
+}
+
+
+#locationTable td{
+    padding: 50px;
+    line-height: 50px;
+}
+
+#locationTable .btn{
+    border-radius: 0px;
+}
+
+@media only screen and (max-width: 500px){
+    #locationTable{
+        padding: 50px 8px;
+    }
+
+    #locationTable td{
+        font-size: 10px;
+        padding: 5px;
+        line-height: 20px;
+    }
+
+    #locationTable .btn{
+        font-size: 10px;
+    }
+}
+
+/* orderOnline */
+#orderonline{
+    min-height: 40vh;
+    text-align: center;
+    padding: 50px;
+}
+
+#orderonline .btn{
+    margin: 10px;
+    border-radius: 0px;
+    text-align: center;
+    width: 180px;
+}
+
+/* contact Page */
+.g-form{
+    width: 100vw;
+    height: 900px;
+}
+
+.instagram{
+  margin-left: 10px;
+}
+
+/* newsletter */
+
+.newsletter-close{
+    margin: 10px;
+}
+
+.modal-body input{
+    margin: 10px 0px;
+}
+
+.submit-newsletter{
+    display: block;
+}
+
+.navinsta{
+    border: #fff solid 1px;
+    color: #fff;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.modal-dialog{
+    margin-left: 50px;
+    width: 16%;
+}
+
+/* Contact Page */
+
+#feedback{
+    height: 100vh;
+    margin: 25px 0px;
+}
+
+/* Style inputs */
+#feedback input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+  }
+
+  #feedback input[type=email], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+  }
+  
+  #feedback input[type=submit] {
+    background-color: #04AA6D;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  #feedback input[type=submit]:hover {
+    background-color: #45a049;
+  }
+  
+  /* Style the container/contact section */
+  #feedback .container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 10px;
+  }
+  
+  /* Create two columns that float next to eachother */
+  #feedback .column {
+    float: left;
+    width: 50%;
+    margin-top: 6px;
+    padding: 20px;
+  }
+  
+  /* Clear floats after the columns */
+  #feedback .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+    #feedback .column, input[type=submit] {
+      width: 100%;
+      margin-top: 0;
+    }
+  }
+
+
+
+  /* for Demo */
+  #construction{
+      margin: 200px 80px;
+      text-align: center;
+  }
