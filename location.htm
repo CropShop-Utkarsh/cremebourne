@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creme-Bourne | We made you Lick</title>
+
+    
+    <style>
+      @font-face {
+  font-family: "Blacksword";
+  src: url("/assets/fonts/Blacksword.otf");
+}
+  </style>
+
+    <!-- Libraries -->
+        <!-- bootstrap -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+        <!-- lottie -->
+        <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+<!-- GSAP -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
+<!-- AnimeJS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+    <!-- Main -->
+        <link rel="stylesheet" href="assets/css/main.css" />
+
+</head>
+
+<body>
+
+  <nav class="navbar fixed-top navbar-expand-lg bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">
+        <img src="assets/img/logo-black.png" alt="">
+      </a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"><i class="bi bi-list"></i></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <div class="mx-auto"></div>
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="index.htm">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="location.htm">Locations</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="menu.htm">Menu</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Connect here
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="feedback.htm">Feedback Design-1</a></li>
+              <li><a class="dropdown-item" href="feedback-2.htm">Feedback Design-2</a></li>
+              <li><a class="dropdown-item" href="underconstruction.htm">Carrers</a></li>
+              <li><a class="dropdown-item" href="underconstruction.htm">Partner</a></li>
+              <li><a class="dropdown-item" href="underconstruction.htm">Media</a></li>
+            </ul>
+          </li>
+        </ul>
+        <a href="https://www.instagram.com/cremeborne/" target="blank">
+        <button type="button" class="btn btn-outline-danger instagram">
+          <i class="bi bi-instagram"></i>
+          @cremeborne
+        </button>
+        </a>
+      </div>
+    </div>
+  </nav>
+
+  <div class="position-fixed bottom-0 end-0" style="margin: 10px 0px; text-align: center;">
+    <a href="menu.htm">
+      <lottie-player src="https://assets10.lottiefiles.com/packages/lf20_TPHVSO.json"  background="transparent"  speed=".7"  style="width: 150px; height: 150px;"  loop  autoplay></lottie-player>
+      <button type="button" class="btn btn-danger lottie-btn">Order Now</button>
+    </a>
+  </div>
+
+    <section id="parallax-bg">
+        <div class="container">
+          <h1>We're Nearby</h1>
+        </div>
+      </section>
+
+      <section id="locationIntro">
+        <p>We serve at all the premiere Locations, also following all the COVID-19 guidelines.<br> safety is our main concern</p>
+      </section>
+
+      <section id="locationTable">
+          <div class="container">
+              <table>
+                  <tr style="border-top: 1px solid rgba(56, 56, 56, 0.5);">
+                      <td style="font-family: 'Bebas Neue';">
+                          GREATER KAILASH
+                      </td>
+                      <td>
+                          MON-FRI 10:00AM to 8:00PM
+                      </td>
+                      <td><a href="https://www.zomato.com/ncr/cremeborne-2-connaught-place-new-delhi" target="blank">
+                        <button type="button" class="btn btn-outline-dark">Order Now</button>
+                        </a>
+                      </td>
+                  </tr>
+                  <tr style="border-top: 1px solid rgba(56, 56, 56, 0.5);">
+                    <td style="font-family: 'Bebas Neue';">
+                        PREET VIHAR
+                    </td>
+                    <td>
+                        MON-FRI 10:00AM to 8:00PM
+                    </td>
+                    <td>
+                      <a href="https://www.zomato.com/ncr/cremeborne-2-connaught-place-new-delhi" target="blank">
+                      <button type="button" class="btn btn-outline-dark">Order Now</button>
+                      </a>
+                    </td>
+                </tr>
+                <tr style="border-top: 1px solid rgba(56, 56, 56, 0.5);">
+                    <td style="font-family: 'Bebas Neue';">
+                        VIBHUTI KHAND
+                    </td>
+                    <td>
+                        MON-FRI 10:00AM to 8:00PM
+                    </td>
+                    <td><a href="https://www.zomato.com/ncr/cremeborne-2-connaught-place-new-delhi" target="blank">
+                      <button type="button" class="btn btn-outline-dark">Order Now</button></a>
+                    </td>
+                </tr>
+                <tr style="border-top: 1px solid rgba(56, 56, 56, 0.5);">
+                    <td style="font-family: 'Bebas Neue';">
+                        BENGALURU
+                    </td>
+                    <td>
+                        MON-FRI 10:00AM to 8:00PM
+                    </td>
+                    <td>
+                      <button type="button" class="btn btn-outline-dark">Order Now</button>
+                    </td>
+                </tr>
+                <tr style="border-top: 1px solid rgba(56, 56, 56, 0.5);">
+                    <td style="font-family: 'Bebas Neue';">
+                        NOIDA
+                    </td>
+                    <td>
+                        MON-FRI 10:00AM to 8:00PM
+                    </td>
+                    <td>
+                      <button type="button" class="btn btn-outline-dark">Order Now</button>
+                    </td>
+                </tr>
+                <tr style="border-top: 1px solid rgba(56, 56, 56, 0.5);">
+                    <td style="font-family: 'Bebas Neue';">
+                        MYSURU
+                    </td>
+                    <td>
+                        MON-FRI 10:00AM to 8:00PM
+                    </td> 
+                    <td>
+                      <button type="button" class="btn btn-outline-dark">Order Now</button>
+                    </td>                   
+                </tr>
+                <tr style="border-top: 1px solid rgba(56, 56, 56, 0.5);">
+                    <td style="font-family: 'Bebas Neue';">
+                        MUMBAI
+                    </td>
+                    <td>
+                        MON-FRI 10:00AM to 8:00PM
+                    </td>
+                    <td>
+                      <button type="button" class="btn btn-outline-dark">Order Now</button>
+                    </td>
+                </tr>
+              </table>
+          </div>
+      </section>
+    
+</body>
+
+<footer>
+  <div class="container">
+    <a href="https://www.instagram.com/cremeborne/"><p><i class="bi bi-instagram"></i> @cremeborne</p></a>
+    <div class="col">
+      <a href="https://www.instagram.com/p/CMwwoxjDEP6/" target="blank"><img class="col-lg-3 col-md-3" src="assets/img/Instagram/1.jpg" alt=""></a>
+      <a href="https://www.instagram.com/p/CM18ZMuDtvQ/" target="blank"><img class="col-lg-3 col-md-3" src="assets/img/Instagram/2.jpg" alt=""></a>
+      <a href="https://www.instagram.com/p/CO2SGBoDzxS/" target="blank"><img class="col-lg-3 col-md-3" src="assets/img/Instagram/3.jpg" alt=""></a>
+    </div>
+    <div class="col">
+      <a href="https://www.instagram.com/p/CO7oeBnj28z/" target="blank"><img class="col-lg-3 col-md-3" src="assets/img/Instagram/4.jpg" alt=""></a>
+      <a href="https://www.instagram.com/p/CPdl3y4jRIr/" target="blank"><img class="col-lg-3 col-md-3" src="assets/img/Instagram/5.jpg" alt=""></a>
+      <a href="https://www.instagram.com/p/CQL2yOwn-Gx/" target="blank"><img class="col-lg-3 col-md-3" src="assets/img/Instagram/6.jpg" alt=""></a>
+    </div>
+    <div class="col">
+      <a href="https://www.instagram.com/p/CQ80arVD-El/" target="blank"><img class="col-lg-3 col-md-3" src="assets/img/Instagram/7.jpg" alt=""></a>
+      <a href="https://www.instagram.com/p/CRWjnA-j69_/" target="blank"><img class="col-lg-3 col-md-3" src="assets/img/Instagram/8.jpg" alt=""></a>
+      <a href="https://www.instagram.com/p/CPNhSzYjDfC/" target="blank"><img class="col-lg-3 col-md-3" src="assets/img/Instagram/9.jpg" alt=""></a>
+    </div>
+  </div>
+  <table>
+    <tr>
+      <td colspan="2" style="font-family: 'Roboto', sans-serif;">&copy;2021 Creme Bourne, All Rights Reserved | Developed by <a href="https://www.cropshop97.com/">Crop Shop</a></td>
+    </tr>
+  </table>
+</footer>
+
+
+<!-- Libraries -->
+        <!-- bootstrap -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+</html>
