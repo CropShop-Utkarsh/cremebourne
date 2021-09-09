@@ -75,54 +75,6 @@
           </div>
         </div>
       </nav>
-    
-      <div class="login-popup">
-        <div class="box">
-           <div class="img-area">
-             <div class="img">
-               <img src="assets/img/gif-newsletter.gif" height="500px" alt="...">
-             </div>
-             <h1>We made you Lick</h1>
-           </div>
-           <div class="form">
-             <div class="close">&times;</div>
-             <h1>We make you Awesome!</h1>
-             <p>Subscribe to know when we're giving away free swag, releasing new products, restocks and more store openings!</p>
-             <form>
-               <div class="form-group">
-                 <input type="text" placeholder="Email" class="form-control">
-               </div>
-               <button type="button" class="btn">Click to lick</button>
-             </form>
-           </div>
-        </div>
-     </div>
-    
-     <script>
-      const loginPopup = document.querySelector(".login-popup");
-      const close = document.querySelector(".close");
-      window.addEventListener("load",function(){ 
-       showPopup();
-       // setTimeout(function(){
-       //   loginPopup.classList.add("show");
-       // },5000)
-      })
-      function showPopup(){
-            const timeLimit = 3 // seconds;
-            let i=0;
-            const timer = setInterval(function(){
-             i++;
-             if(i == timeLimit){
-              clearInterval(timer);
-              loginPopup.classList.add("show");
-             } 
-             console.log(i)
-            },1000);
-      }
-      close.addEventListener("click",function(){
-        loginPopup.classList.remove("show");
-      })
-     </script>
 
     <section id="parallax-bg">
         <div class="container">
@@ -181,10 +133,10 @@
     <!-- Libraries -->
             <!-- bootstrap -->
             <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
-    <script>
-          var preloader = document.getElementById('loader');
-          function loading(){
-            preloader.style.display = 'none';
-          }
-        </script>
+            <script>
+              var preloader = document.getElementById('loader');
+              function loading(){
+                preloader.style.display = 'none';
+              }
+            </script>
     </html>
