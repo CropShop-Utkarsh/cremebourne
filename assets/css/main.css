@@ -279,8 +279,7 @@ footer a:link {
 .showcase{
   right: 0;
   width: 100%;
-  min-height: 100vh;
-  padding: 0px;
+  height: 100vh;
   justify-content: space-between;
   align-items: center;
   background: #111;
@@ -290,73 +289,22 @@ footer a:link {
   right: 300px;
 }
 
-.showcase video
-{
+.showcase video{
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
   object-fit: cover;
-  opacity: 0.8;
 }
-.overlay
-{
+
+.overlay{
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
   background: #f403c028;
-  mix-blend-mode: overlay;
-}
-.text
-{
-  position: relative;
-  z-index: 10;
-}
-
-.text h2
-{
-  font-size: 5em;
-  font-weight: 800;
-  color: #fff;
-  line-height: 1em;
-  text-transform: uppercase;
-}
-.text h3
-{
-  font-size: 4em;
-  font-weight: 700;
-  color: #fff;
-  line-height: 1em;
-  text-transform: uppercase;
-}
-.text p
-{
-  font-size: 1.1em;
-  color: #fff;
-  margin: 20px 0;
-  font-weight: 400;
-  max-width: 700px;
-}
-.text a
-{
-  display: inline-block;
-  font-size: 1em;
-  background: #fff;
-  padding: 10px 30px;
-  text-transform: uppercase;
-  text-decoration: none;
-  font-weight: 500;
-  margin-top: 10px;
-  color: #111;
-  letter-spacing: 2px;
-  transition: 0.2s;
-}
-.text a:hover
-{
-  letter-spacing: 6px;
 }
 
 @media (max-width: 991px)
@@ -364,34 +312,9 @@ footer a:link {
   .showcase,
   .showcase header
   {
-    padding: 0px;
-  }
-  .text h2
-  {
-    font-size: 3em;
-  }
-  .text h3
-  {
-    font-size: 2em;
+    padding: 10px;
   }
 }
-
-/* #intro{
-    height: 100vh;
-    width: 100%;
-    background:#000 url(../img/bg.png);
-}
-
-.intro-logo{
-    width: 60%;
-}
-
-@media only screen and (max-width: 500px){
-    #intro{
-        height: 70vh;
-        width: 100%;
-    }
-} */
 
 /* USP */
 
@@ -422,6 +345,7 @@ footer a:link {
 }
 
 #usp p{
+    font-family: 'Roboto', sans-serif;
     text-align: justify;
 }
 
@@ -436,6 +360,7 @@ footer a:link {
 #usp2{
     width: 100%;
     background: rgb(19, 19, 19);
+    background-image: url("../img/bg.png");
     color: rgb(255, 255, 255);
 }
 
@@ -463,6 +388,7 @@ footer a:link {
 }
 
 #usp2 p{
+    font-family: 'Roboto', sans-serif;
     text-align: justify;
 }
 
@@ -596,6 +522,7 @@ background-image: url("../img/bg.png");
   background-repeat: no-repeat;
   background-size: cover;
   padding: 100px 50px 100px 50px;
+  margin-top: 60px;
 }
 
 #parallax-bg h1{
@@ -622,6 +549,7 @@ background-image: url("../img/bg.png");
 
 
 #locationTable td{
+    font-size: 21px;
     padding: 50px;
     line-height: 50px;
 }
@@ -702,70 +630,30 @@ background-image: url("../img/bg.png");
 /* Contact Page */
 
 #feedback{
-    height: 100vh;
+    height: auto;
     margin: 25px 0px;
+    text-align: center;
 }
 
-/* Style inputs */
-#feedback input[type=text], select, textarea {
-    width: 100%;
-    padding: 12px;
-    border: 1px solid #ccc;
-    margin-top: 6px;
-    margin-bottom: 16px;
-    resize: vertical;
-  }
+.contact-p{
+    margin: 100px 100px 80px;
+}
 
-  #feedback input[type=email], select, textarea {
-    width: 100%;
-    padding: 12px;
-    border: 1px solid #ccc;
-    margin-top: 6px;
-    margin-bottom: 16px;
-    resize: vertical;
-  }
-  
-  #feedback input[type=submit] {
-    background-color: #04AA6D;
-    color: white;
-    padding: 12px 20px;
-    border: none;
-    cursor: pointer;
-  }
-  
-  #feedback input[type=submit]:hover {
-    background-color: #45a049;
-  }
-  
-  /* Style the container/contact section */
-  #feedback .container {
-    border-radius: 5px;
-    background-color: #f2f2f2;
-    padding: 10px;
-  }
-  
-  /* Create two columns that float next to eachother */
-  #feedback .column {
-    float: left;
-    width: 50%;
-    margin-top: 6px;
-    padding: 20px;
-  }
-  
-  /* Clear floats after the columns */
-  #feedback .row:after {
-    content: "";
-    display: table;
-    clear: both;
-  }
-  
-  /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
-  @media screen and (max-width: 600px) {
-    #feedback .column, input[type=submit] {
-      width: 100%;
-      margin-top: 0;
-    }
-  }
+#feedback hr{
+    background-color: black;
+    opacity: 100%;
+    width: 60%;
+    height: 1px;
+    margin: auto;
+}
+
+.form-link{
+    margin: 50px 50px 10px;
+}
+
+.contact-info{
+    margin: 50px;
+}
 
 
 
