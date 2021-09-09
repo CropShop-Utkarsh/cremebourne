@@ -280,7 +280,7 @@ footer a:link {
   right: 0;
   width: 100%;
   min-height: 100vh;
-  padding: 100px;
+  padding: 0px;
   justify-content: space-between;
   align-items: center;
   background: #111;
